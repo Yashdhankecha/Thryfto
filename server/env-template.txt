@@ -1,0 +1,26 @@
+# Copy this file to .env and update the values
+
+# Server Configuration
+PORT=5000
+NODE_ENV=development
+
+# JWT Configuration
+JWT_SECRET=d0a6b2776067d5723b6725d97d8440b0edf83db69ef36ec074a71b845264bd4853c1e6b76da0e28d8633a306a16e9716453c09f7209eb897c7184885be86f738
+JWT_EXPIRE=7d
+
+# Database Configuration
+MONGODB_URI=mongodb://localhost:27017/rewear
+
+# Email Configuration (for production)
+SMTP_HOST=smtp.gmail.com
+SMTP_PORT=587
+SMTP_USER=your-email@gmail.com
+SMTP_PASS=your-app-password
+
+# Google OAuth Configuration
+GOOGLE_CLIENT_ID=your-google-client-id
+GOOGLE_CLIENT_SECRET=your-google-client-secret
+GOOGLE_CALLBACK_URL=http://localhost:5000/api/auth/google/callback
+
+# Client URL (for OAuth redirects)
+CLIENT_URL=http://localhost:5174 

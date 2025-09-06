@@ -50,40 +50,45 @@ jspm_packages/
 # Yarn Integrity file
 .yarn-integrity
 
-# dotenv environment variables file
+# dotenv environment variable files
 .env
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local
 
-# parcel-bundler cache (https://parceljs.org/)
-.cache
-.parcel-cache
+# Database files
+*.sqlite
+*.sqlite3
+*.db
+dev-database.sqlite
+dev-database.sqlite-journal
 
-# next.js build output
-.next
+# Build outputs
+build/
+dist/
+out/
 
-# nuxt.js build output
-.nuxt
+# Temporary files
+tmp/
+temp/
 
-# vuepress build output
-.vuepress/dist
+# Security files
+*.pem
+*.key
+*.crt
+*.p12
+*.p8
 
-# Serverless directories
-.serverless
-
-# FuseBox cache
-.fusebox/
-
-# DynamoDB Local files
-.dynamodb/
-
-# TernJS port file
-.tern-port
+# Backup files
+*.bak
+*.backup
 
 # IDE files
 .vscode/
 .idea/
 *.swp
 *.swo
-*~
 
 # OS generated files
 .DS_Store
@@ -94,19 +99,7 @@ jspm_packages/
 ehthumbs.db
 Thumbs.db
 
-# Uploads directory (if you have file uploads)
-uploads/
-
-# Temporary files
-tmp/
-temp/
-
-# Database files (if using local databases)
-*.db
-*.sqlite
-*.sqlite3
-
-# PM2 logs
+# PM2 files
 .pm2/
 
 # Docker
@@ -114,3 +107,8 @@ temp/
 Dockerfile
 docker-compose.yml
 docker-compose.yaml
+
+# Local development files
+.local
+uploads/
+public/uploads/ 

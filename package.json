@@ -1,21 +1,43 @@
 {
-  "name": "mern-auth-system",
+  "name": "mern-auth-app",
   "version": "1.0.0",
-  "description": "Complete MERN stack authentication system with modern UI",
+  "description": "Complete MERN Stack Authentication App with JWT and OTP",
   "main": "index.js",
   "scripts": {
-    "start": "concurrently \"npm run server\" \"npm run client\"",
-    "server": "cd server && npm start",
-    "client": "cd client && npm start",
-    "dev": "concurrently \"npm run server:dev\" \"npm run client\"",
-    "server:dev": "cd server && npm run dev",
-    "install:all": "npm install && cd server && npm install && cd ../client && npm install",
-    "build": "cd client && npm run build"
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm run dev",
+    "install-server": "cd server && npm install",
+    "install-client": "cd client && npm install",
+    "install-all": "npm run install-server && npm run install-client",
+    "build": "cd client && npm run build",
+    "start": "cd server && npm start"
   },
-  "keywords": ["mern", "authentication", "react", "express", "mongodb"],
+  "keywords": [
+    "mern",
+    "authentication",
+    "jwt",
+    "otp",
+    "react",
+    "express",
+    "mongodb",
+    "tailwindcss"
+  ],
   "author": "",
-  "license": "MIT",
+  "license": "ISC",
   "devDependencies": {
-    "concurrently": "^8.2.2"
+    "@types/file-saver": "^2.0.7",
+    "@types/xlsx": "^0.0.35",
+    "concurrently": "^9.2.0"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.21",
+    "bcrypt": "^6.0.0",
+    "file-saver": "^2.0.5",
+    "framer-motion": "^12.23.6",
+    "postcss": "^8.5.6",
+    "recharts": "^3.1.0",
+    "tailwindcss": "^4.1.11",
+    "xlsx": "^0.18.5"
   }
 }
