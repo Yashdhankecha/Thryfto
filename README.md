@@ -4,7 +4,8 @@ Team members:
 Desai karansinh: karansinhdesai04@gmail.com
 Yash ketanbhai Dhankecha: ydhankecha@gmail.com
 Harsh vyas: harshvyas4567harsh@gmail.com
-shubham vaghani 
+shubham vaghani :
+srvaghani22@gmail.com
 
 Problem Statement:
 ReWear - community clothing exchange
